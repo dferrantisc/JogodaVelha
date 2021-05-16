@@ -2,20 +2,19 @@
   padding: 0px;
   margin: 0px;
 }
-title {
+
+body {
   color: black;
   text-align: center;
+}
+title {
   font-family: "Jokerman";
 }
 h1 {
-  color: black;
-  text-align: center;
   font-family: "Jokerman";
   font-size: 50px;
 }
 h2 {
-  color: black;
-  text-align: center;
   font-family: "Curlz MT";
   font-size: 40px;
 }
@@ -42,3 +41,5 @@ h2 {
   border-right: solid 4px;
   float: left;
 }
+
+
