@@ -1,0 +1,44 @@
+/*alert("Teste");
+
+const socket = io();*/
+
+const jogador1 = "X";
+const jagador2 = "O";
+
+var vezjogo = jogador1;
+var fimjogo = false;
+
+updatVez();
+initCasa();
+
+function updatVez() {
+  if (fimjogo) {
+    return;
+  }
+
+  if (vezjogo == jogador1) {
+    var play = document.querySelectorAll("div#view img")[0];
+    play.setAttribute("src", "imgs/errado.png");
+  } else {
+    var play = document.querySelectorAll("div#view img")[0];
+    play.setAttribute("src", "imgs/rec.png");
+  }
+}
+
+function initCasa(){
+    var casa = document.getElementsByClassName('casa');
+    for(var i=0; i<casa.length;i++){
+        casa[i].addEventListener("click", function(){
+            if(fimjogo){return;}
+            if(this.getElementsByClassName("img").length==0){
+                if(vezjogo==jogador1){
+                    this.innerHtml="<img src='imgs/errado.png'>";
+                    this.setAttribute("p")
+
+                }else{
+
+                }
+            }
+        })
+    }
+}

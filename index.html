@@ -4,37 +4,51 @@
         <!--Icon da Pagina-->
         <link rel="icon" type="imagen/png" href="imgs/almofada-de-jogo.png"/>
 
-
         <title>Jogo da Velha</title>
 
-        <!--Estilo do Joguinho-->
+        <!--Estilo do Joguinho/CSS-->
         <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="_js/script.js"></script>
 
-        <!--JQuery-->
+        
 
     </head>
     <body>
-        <h1> JOGO DA VELHA </h1>
-        <h2> Vamos Jogar? Escolha um:</h2>
-        <h1>X ou O?</h1>
+        
+        <h1> JOGO DA VELHA </h1> 
+
+        <div>
+            <label for="Tipo"><h2>Escolha um:</h2></label>
+            <select id="tipo" name="tipo">
+                <option value="X">
+                    X
+                </option>
+                <option value="O">
+                    O
+                </option>
+            </select>
+        </div>
+
         <button>Escolher</button>
+        <br></br>
+
+        <div id="view"><h3>Vez do Jogador:</h3></div>
 
     <div id="jogo">
         <div class="linha">
             <div class="casa" id="c1"></div>
             <div class="casa" id="c2"></div>
             <div class="casa" id="c3"></div>
-
-        </div>
-        <div class="linha">
+            
             <div class="casa" id="c4"></div>
             <div class="casa" id="c5"></div>
             <div class="casa" id="c6"></div>
-        </div>
-        <div class="linnha">
+            
             <div class="casa" id="c7"></div>
             <div class="casa" id="c8"></div>
             <div class="casa" id="c9"></div>
+            
         </div>
     </div> 
 
